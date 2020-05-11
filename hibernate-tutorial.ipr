@@ -130,11 +130,14 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/hibernate-tutorial.iml" filepath="$PROJECT_DIR$/hibernate-tutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hb-01-one-to-one-uni.iml" filepath="$PROJECT_DIR$/hb-01-one-to-one-uni.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
   </component>
   <component name="libraryTable">
     <library name="Hibernate 5.4.11-5.4.11" type="hibernate">

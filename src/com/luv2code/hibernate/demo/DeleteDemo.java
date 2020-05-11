@@ -6,7 +6,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class CreateDemo {
+public class DeleteDemo {
 
     public static void main(String[] args) {
 
@@ -20,19 +20,15 @@ public class CreateDemo {
 
         try {
 
-            Instructor tempInstructor = new Instructor("sda","assadfsglan","dfsbg@mail.ru");
-            InstructorDetail tempInstructorDetail =  new InstructorDetail("http://www.fdsgdb.com", "play ffgbootball");
-
-            tempInstructor.setInstructorDetail(tempInstructorDetail);
-
             session.beginTransaction();
 
-            session.save(tempInstructor);
+            int theId = 2;
+
+            Instructor tempInstructor = session.get(Instructor.class, theId);
+
+            session.delete(tempInstructor);
 
             session.getTransaction().commit();
-
-            System.out.println("Done!");
-
         }
 
         finally {
